@@ -13,7 +13,7 @@ The goal of demopkg is to practice making a package.
 You can install the development version of demopkg like so:
 
 ``` r
-devtools::install_github("debruine/demopkg")
+devtools::install_github("psyteachr/demopkg")
 ```
 
 ``` r
