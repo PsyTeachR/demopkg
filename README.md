@@ -25,9 +25,12 @@ library(demopkg)
 This demo package can be used to allow people to catch up with the
 [Coding Club](https://psyteachr.github.io/intro-r-pkgs/) sessions.
 
-To clone this package project to your computer, run the following code.
-Set `destdir` to the directory where you want to save this project
-directory (defaults to your current working directory).
+To clone this package project to your computer, download the zip file
+using the green Code button above.
+
+Alternatively, you can run the following code. Set `destdir` to the
+directory where you want to save this project directory (defaults to
+your current working directory).
 
 ``` r
 # set fork = TRUE if you want to fork to your github 
@@ -44,3 +47,6 @@ The list below shows what is currently included in the package.
 2.  [Adding
     data](https://psyteachr.github.io/intro-r-pkgs/02-data.html):
     dataset `self_res_att` included
+3.  [Custom
+    functions](https://psyteachr.github.io/intro-r-pkgs/03-functions.html):
+    added functions `round0()` and `apa_t_pair()`
