@@ -1,0 +1,40 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# demopkg
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of demopkg is to practice making a package.
+
+## Installation
+
+You can install the development version of demopkg like so:
+
+``` r
+devtools::install_github("debruine/demopkg")
+```
+
+
+```{r, eval= FALSE}
+library(demopkg)
+```
+
+
+<!--
+checking for unstated dependencies in examples (381ms)
+   no parsed files found
+   -->
