@@ -2,5 +2,7 @@
 
 export("%>%")
 export(apa_t_pair)
+import(ggplot2)
 importFrom(magrittr,"%>%")
+importFrom(stats,sd)
 importFrom(stats,t.test)

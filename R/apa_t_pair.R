@@ -31,7 +31,7 @@ apa_t_pair <- function(x, y,
                        level1 = "level 1",
                        level2 = "level 2",
                        alpha = 0.05) {
-  t_results <- stats::t.test(
+  t_results <- t.test(
     x = x,
     y = y,
     paired = TRUE
@@ -42,8 +42,8 @@ apa_t_pair <- function(x, y,
   apa_text <- glue::glue(template,
              mean1 = round0(mean(x), 1),
              mean2 = round0(mean(y), 1),
-             sd1 = round0(stats::sd(x), 1),
-             sd2 = round0(stats::sd(y), 1),
+             sd1 = round0(sd(x), 1),
+             sd2 = round0(sd(y), 1),
              df = t_results$parameter,
              t_value = round0(t_results$statistic, 2),
              p_value = round0(t_results$p.value, 3),
