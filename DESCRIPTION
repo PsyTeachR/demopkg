@@ -19,4 +19,6 @@ LazyData: true
 URL: https://github.com/PsyTeachR/demopkg
 BugReports: https://github.com/PsyTeachR/demopkg/issues
 Imports: 
-    glue
+    glue,
+    magrittr,
+    stats
