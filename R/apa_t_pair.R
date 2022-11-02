@@ -31,6 +31,14 @@ apa_t_pair <- function(x, y,
                        level1 = "level 1",
                        level2 = "level 2",
                        alpha = 0.05) {
+  # error checks
+  if (all(x == y)) {
+    stop("x and y cannot be identical")
+  }
+
+  if (!is.numeric(x)) stop("x must be a numeric vector")
+  if (!is.numeric(y)) stop("y must be a numeric vector")
+
   t_results <- t.test(
     x = x,
     y = y,
