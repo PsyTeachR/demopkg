@@ -1,0 +1,37 @@
+---
+title: "Demopkg Overview"
+output: 
+  rmarkdown::html_vignette:
+    df_print: kable
+vignette: >
+  %\VignetteIndexEntry{Demopkg Overview}
+  %\VignetteEncoding{UTF-8}
+  %\VignetteEngine{knitr::rmarkdown}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup, message=FALSE}
+library(demopkg)
+library(dplyr)
+```
+
+## Data
+
+### self_res_att
+
+Attractiveness judgements of same-sex and other-sex self-resembling faces from DeBruine (2004). Data are from 108 participants. Original data are from <https://osf.io/3c5s4/>.
+
+```{r, echo = FALSE}
+self_res_att |>
+  group_by(sex, ethgroup) |>
+  summarise(n = n(),
+            mean_age = mean(age) |> round(1),
+            sd_age = sd(age) |> round(2),
+            .groups = "drop")
+```
