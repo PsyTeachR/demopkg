@@ -1,7 +1,7 @@
 Package: demopkg
-Date: 2022-11-09
+Date: 2022-11-16
 Title: Demo Package
-Version: 0.0.0.9006
+Version: 0.0.0.9007
 Authors@R: c(
     person(given = "Lisa",
            family = "DeBruine",
