@@ -16,7 +16,8 @@ RoxygenNote: 7.2.1
 Depends: 
     R (>= 2.10)
 LazyData: true
-URL: https://github.com/PsyTeachR/demopkg
+URL: https://github.com/PsyTeachR/demopkg,
+    https://psyteachr.github.io/demopkg/
 BugReports: https://github.com/PsyTeachR/demopkg/issues
 Imports: 
     ggplot2,
