@@ -1,18 +1,23 @@
 citHeader("To cite demopkg in publications use:")
 
-title <- "{demopkg}: Data and analysis from {DeBruine} (2004)"
-url   <- "https://psyteachr.github.io/demopkg"
+# meta <- packageDescription("demopkg")
 year  <- sub("-.*", "", meta$Date)
 note  <- sprintf("R package version %s", meta$Version)
+authors <- eval(parse(text = meta$`Authors@R`))
+text_authors <- authors |>
+  format(include= c("family", "given"),
+         collapse = list(family = ", ")) |>
+  paste(collapse = ", ")
 
 bibentry(
   bibtype = "Manual",
-  title = title,
-  author = c(person("Lisa", "DeBruine")),
+  title = sprintf("{%s}: %s", meta$Package, meta$Title),
+  author = authors,
   year = year,
   note = note,
-  url = url,
-  textVersion = paste0(
-    "Lisa DeBruine, (", year, "). demopkg: Data and analysis from {DeBruine} (2004). ", note, ". ", url
+  url = meta$URL,
+  textVersion = sprintf(
+    "%s, (%s). %s: %s. %s, %s",
+    text_authors, year, meta$Package, meta$Title, note, meta$URL
   )
 )
