@@ -11,7 +11,7 @@ The goal of demopkg is to practice making a package.
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/PsyTeachR/demopkg}
+  \item \url{https://psyteachr.github.io/demopkg/}
   \item Report bugs at \url{https://github.com/PsyTeachR/demopkg/issues}
 }
 
