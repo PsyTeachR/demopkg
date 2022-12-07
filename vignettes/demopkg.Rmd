@@ -21,7 +21,11 @@ library(demopkg)
 library(dplyr)
 ```
 
+
+
 ## Data
+
+This is the data from the original paper.
 
 ### self_res_att
 
