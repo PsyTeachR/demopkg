@@ -32,7 +32,7 @@ devtools::install_github("psyteachr/demopkg")
 ```
 
 
-``` r
+```{r, eval= FALSE}
 library(demopkg)
 ```
 
